@@ -13,7 +13,7 @@ from torch import Tensor
 def run_linear(
     d_in: int,
     d_out: int,
-    weights: Float[Tensor, " d_out d_in"],
+    weights: Float[Tensor, " d_out d_in"], # pyright: ignore[reportUndefinedVariable]
     in_features: Float[Tensor, " ... d_in"],
 ) -> Float[Tensor, " ... d_out"]:
     """
@@ -559,7 +559,9 @@ def get_tokenizer(
     Returns:
         A BPE tokenizer that uses the provided vocab, merges, and special tokens.
     """
-    raise NotImplementedError
+    from cs336_basics.tokenizer import get_tokenizer as build_tokenizer
+
+    return build_tokenizer(vocab, merges, special_tokens)
 
 
 def run_train_bpe(
@@ -589,4 +591,6 @@ def run_train_bpe(
                 representing that <token1> was merged with <token2>.
                 Merges are ordered by order of creation.
     """
-    raise NotImplementedError
+    from cs336_basics.pretokenization import run_train_bpe as train_bpe
+
+    return train_bpe(input_path, vocab_size, special_tokens)
