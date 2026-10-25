@@ -1,0 +1,1 @@
+implent this line Linear/Embedding → RMSNorm → RoPE → Attention → MHA → SwiGLU → Transformer Block → Transformer LM
