@@ -3,6 +3,9 @@
 For a full description of the assignment, see the assignment handout at
 [cs336_assignment1_basics.pdf](./cs336_assignment1_basics.pdf)
 
+For a step-by-step guide to reading this repository, writing each GPT component,
+training the model, and designing ablations, see [TUTORIAL.md](./TUTORIAL.md).
+
 If you see any issues with the assignment handout or code, please feel free to
 raise a GitHub issue or open a pull request with a fix.
 

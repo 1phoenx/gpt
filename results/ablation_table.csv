@@ -1,0 +1,5 @@
+run,parameters,context,residual,norm,train_loss,valid_loss,tokens_seen
+baseline,10160960,32,True,pre,3.6350,3.3888,1536
+no_residual,10160960,32,False,pre,5.6450,5.6388,1536
+post_norm,10160960,32,True,post,3.8769,3.6200,1536
+context_64,10160960,64,True,pre,2.6952,2.6071,3072

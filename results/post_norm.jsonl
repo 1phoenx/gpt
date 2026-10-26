@@ -1,0 +1,8 @@
+{"type": "config", "run_name": "post_norm", "parameters": 10160960, "context_length": 32, "d_model": 320, "layers": 4, "heads": 4, "d_ff": 1536, "residual": true, "norm_position": "post", "seed": 1337}
+{"type": "metrics", "step": 1, "train_loss": 8.402885437011719, "valid_loss": 8.305745124816895, "lr": 0.0, "tokens_seen": 64, "elapsed_s": 0.06469893455505371}
+{"type": "metrics", "step": 4, "train_loss": 8.09723949432373, "valid_loss": 7.581788063049316, "lr": 0.00045, "tokens_seen": 256, "elapsed_s": 0.20406293869018555}
+{"type": "metrics", "step": 8, "train_loss": 7.074188232421875, "valid_loss": 5.876255035400391, "lr": 0.0005705717615308593, "tokens_seen": 512, "elapsed_s": 0.3890669345855713}
+{"type": "metrics", "step": 12, "train_loss": 5.173999786376953, "valid_loss": 5.163281440734863, "lr": 0.0004525774349296775, "tokens_seen": 768, "elapsed_s": 0.5579390525817871}
+{"type": "metrics", "step": 16, "train_loss": 4.318045616149902, "valid_loss": 3.985024929046631, "lr": 0.0002877626944391376, "tokens_seen": 1024, "elapsed_s": 0.7323179244995117}
+{"type": "metrics", "step": 20, "train_loss": 3.9597110748291016, "valid_loss": 4.017215251922607, "lr": 0.00013908116907963218, "tokens_seen": 1280, "elapsed_s": 0.8952157497406006}
+{"type": "metrics", "step": 24, "train_loss": 3.876861095428467, "valid_loss": 3.6200366020202637, "lr": 6.332414803931283e-05, "tokens_seen": 1536, "elapsed_s": 1.050934076309204}

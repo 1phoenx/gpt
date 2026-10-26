@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+  <rect width="1200" height="520" fill="#f7f9fc"/>
+  <style>.box{fill:#fff;stroke:#1f2937;stroke-width:2}.label{font:18px sans-serif;fill:#111827}.small{font:15px sans-serif;fill:#374151}.arrow{stroke:#2563eb;stroke-width:3;fill:none;marker-end:url(#a)}</style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#2563eb"/></marker></defs>
+  <text x="600" y="36" text-anchor="middle" class="label" font-weight="bold">11.3M parameter TinyStories decoder-only LM</text>
+  <rect x="40" y="205" width="145" height="70" rx="8" class="box"/><text x="112" y="235" text-anchor="middle" class="label">Token IDs</text><text x="112" y="258" text-anchor="middle" class="small">B = 4, T = 64/128</text>
+  <rect x="225" y="205" width="145" height="70" rx="8" class="box"/><text x="297" y="235" text-anchor="middle" class="label">Embedding</text><text x="297" y="258" text-anchor="middle" class="small">10,000 x 320</text>
+  <rect x="410" y="115" width="330" height="250" rx="12" class="box"/><text x="575" y="145" text-anchor="middle" class="label" font-weight="bold">Pre-Norm Transformer Block x4</text>
+  <rect x="445" y="165" width="260" height="40" rx="6" class="box"/><text x="575" y="191" text-anchor="middle" class="small">RMSNorm -&gt; RoPE MHA</text>
+  <rect x="445" y="220" width="260" height="40" rx="6" class="box"/><text x="575" y="246" text-anchor="middle" class="small">Residual addition</text>
+  <rect x="445" y="275" width="260" height="40" rx="6" class="box"/><text x="575" y="301" text-anchor="middle" class="small">RMSNorm -&gt; SwiGLU</text>
+  <path d="M185 240 L225 240 M370 240 L410 240 M740 240 L785 240" class="arrow"/>
+  <rect x="785" y="205" width="145" height="70" rx="8" class="box"/><text x="857" y="235" text-anchor="middle" class="label">Final RMSNorm</text><text x="857" y="258" text-anchor="middle" class="small">320 features</text>
+  <path d="M930 240 L970 240" class="arrow"/>
+  <rect x="970" y="205" width="180" height="70" rx="8" class="box"/><text x="1060" y="235" text-anchor="middle" class="label">LM head</text><text x="1060" y="258" text-anchor="middle" class="small">320 -&gt; 10,000 logits</text>
+  <text x="600" y="430" text-anchor="middle" class="small">Causal mask in attention; next-token cross entropy; AdamW with warmup + cosine decay</text>
+</svg>
